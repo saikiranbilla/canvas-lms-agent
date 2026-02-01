@@ -5,3 +5,8 @@ supabase
 openai
 python-dotenv
 httpx
+mcp
+keywordsai_tracing
+langchain-openai
+nest-asyncio
+pyjwt

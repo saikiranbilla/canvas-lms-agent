@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --parchment: #F5EEE2;
+  --deep-charcoal: #2A2B2F;
+  --terracotta: #B05B36;
+  --terracotta-light: #C46A4A;
+  --terracotta-dark: #9A4D2F;
+  --warm-cream: #FDF8F0;
+  --soft-gray: #8B8D94;
+  --light-gray: #E5E7EB;
+  --success-green: #10B981;
+  --warning-amber: #F59E0B;
+  --error-red: #EF4444;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(42, 43, 47, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(42, 43, 47, 0.1), 0 2px 4px -1px rgba(42, 43, 47, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(42, 43, 47, 0.1), 0 4px 6px -2px rgba(42, 43, 47, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(42, 43, 47, 0.1), 0 10px 10px -5px rgba(42, 43, 47, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--parchment);
+  color: var(--deep-charcoal);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Prevent window scrolling */
+  height: 100vh;
+}
+
+/* Utility Classes */
+.text-serif {
+  font-family: var(--font-serif);
+}
+
+.text-sans {
+  font-family: var(--font-sans);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--terracotta);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--terracotta-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+  background-color: var(--terracotta-dark);
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--deep-charcoal);
+  border: 1px solid var(--light-gray);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-secondary:hover {
+  background-color: var(--warm-cream);
+  border-color: var(--terracotta);
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+}
+
+/* Status Indicators */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.status-dot.live {
+  background-color: var(--success-green);
+  animation: pulse 2s infinite;
+}
+
+.status-dot.planning {
+  background-color: var(--warning-amber);
+}
+
+.status-dot.idle {
+  background-color: var(--soft-gray);
+}
+
+.status-dot.active {
+  background-color: var(--terracotta);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--soft-gray);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--deep-charcoal);
+}

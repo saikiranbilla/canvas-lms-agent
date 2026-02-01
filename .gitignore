@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -16,24 +17,44 @@ parts/
 sdist/
 var/
 wheels/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # Virtual Environment
 venv/
-env/
-ENV/
-.env
-.venv
-env.bak/
-venv.bak/
+.venv/
 
 # Environment Variables
 .env
+.env.local
 
 # IDEs
 .vscode/
 .idea/
+.trae/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node
+node_modules/
+dist/
+build/
+
+# Application Specific
+checkpoints.db
+checkpoints.sqlite
+*.db
+*.sqlite
+stderr.txt
+stdout.txt
+src/demo_manager.py
+
+# OS
+.DS_Store
+Thumbs.db
+nul

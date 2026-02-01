@@ -1,7 +1,12 @@
+version: '3.8'
+
 services:
   mcp-canvas-lms:
-    image: dmontgomery40/mcp-canvas-lms
+    build: ./mcp-canvas-lms  # <--- CRITICAL: Must say 'build', NOT 'image'
+    container_name: canvas_mcp
     ports:
       - "3000:3000"
     env_file:
       - .env
+    tty: true          # (Optional) Keeps the window open if it crashes
+    stdin_open: true   # (Optional) Interactive mode

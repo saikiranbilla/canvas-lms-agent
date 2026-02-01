@@ -1,4 +1,4 @@
-# Canvas Agent: The Autonomous AI Teaching Assistant
+# CLAI: The Autonomous AI Teaching Assistant
 
 > **An autonomous multi-agent system that manages your Canvas LMS, creates assignments, and drafts curriculum in real-time—saving educators hours every week.**
 

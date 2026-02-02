@@ -452,7 +452,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 🙏 Acknowledgments
 
-- [Canvas MCP](https://github.com/anthropics/canvas-mcp) — The Model Context Protocol server powering our Canvas LMS integration. Special thanks to the MCP team for creating a standardized way to connect AI agents with educational tools.
+- This project utilizes the **[Canvas MCP Server](https://github.com/DMontgomery40/mcp-canvas-lms)** developed by **David Montgomery**. I gratefully acknowledge his work in creating the foundational Model Context Protocol integration that powers the tool execution layer of this agent.
 - [LangChain](https://langchain.com) — For the incredible LangGraph framework that powers our multi-agent orchestration
 - [Keywords AI](https://keywordsai.co) — For gateway and observability infrastructure enabling intelligent model routing
 - [Anthropic](https://anthropic.com) — For Claude and the Model Context Protocol specification

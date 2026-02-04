@@ -44,6 +44,7 @@ Educators are drowning in administrative work:
 - ✅ **Reason about pedagogy** — Draft rubrics, feedback, and syllabus content
 - ✅ **Act autonomously** — Serve as your 24/7 super-admin
 
+![Architecture](./assets/clai_architecture.png)
 ---
 
 ## ✨ Features
